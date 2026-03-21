@@ -1,61 +1,59 @@
-# Windows screenFetch
+Windows screenFetch
 
 <img src="screenshots/ss.png"/>
 
-#### ScreenFetch <hr>
+ScreenFetch <hr>
 
-screenFetch was originally made as a "Bash Screenshot Information Tool". Simply, it lets you display detailed information about your system in the terminal, it also comes with a ASCII logo for the detected Linux distribution.
+screenFetch 最初是一个“Bash 截图信息工具”。简单来说，它可以在终端中显示关于你系统的详细信息，并且会附带检测到的 Linux 发行版的 ASCII 艺术标志。
 
-This doesn't work on Windows natively and this project is my attempt to provide a solution that does not require obtaining a linux environment on windows.
+这个工具本身无法在 Windows 上原生运行，这个项目是我尝试提供一个不需要在 Windows 上获取 Linux 环境的解决方案。
 
-<a href="https://github.com/KittyKatt/screenFetch"> The original can be found in KittyKatt's repository.</a>
+<a href="https://github.com/KittyKatt/screenFetch"> 原始项目可以在 KittyKatt 的仓库中找到。</a>
 
-#### How is it different? <hr>
-The original screenfetch requires a system that supports bash so it cannot be used on windows natively! This is a small scale project that simply "mimics" the behaviour of screenFetch in windows. 
+有何不同？ <hr>
 
-**Windows screenFetch is a Powershell script, not a Bash program**. Therefore, a linux-like environment such as <a href="https://www.cygwin.com/"> Cygwin</a> or <a href="http://www.mingw.org/wiki/msys">MinGW</a> is ***not required***. This can be run natively on windows as a Powershell script within a Powershell or command prompt console.
+原始的 screenFetch 需要系统支持 bash，因此无法在 Windows 上原生使用！这是一个小规模项目，旨在 Windows 上“模仿” screenFetch 的行为。
 
-*Since this tool is only intended to run within a windows environment, no flags to invoke any Linux distribution ASCII art is supported.*
+Windows screenFetch 是一个 PowerShell 脚本，而不是 Bash 程序。因此，不需要像 <a href="https://www.cygwin.com/">Cygwin</a> 或 <a href="http://www.mingw.org/wiki/msys">MinGW</a> 这样的类 Linux 环境。它可以在 Windows 上作为 PowerShell 脚本原生运行，在 PowerShell 或命令提示符控制台中执行。
 
-#### Installation <hr>
+由于此工具仅设计用于 Windows 环境，因此不支持调用任何 Linux 发行版 ASCII 艺术标志的参数。
 
-Windows screenFetch is available and managed through <a href="https://www.powershellgallery.com/packages/windows-screenfetch">Powershell Gallery</a>. 
+安装 <hr>
 
-<b>Powershell</b>
+Windows screenFetch 可通过 <a href="https://www.powershellgallery.com/packages/windows-screenfetch">Powershell Gallery</a> 获取和管理。
 
-<b=>Note</b> that if you were using windows-screenfetch before it was uploaded to Powershell Gallery, you will need to delete the local instance and associated environment variables before running the following install.
+<b>PowerShell</b>
 
-    PS> Install-Module -Name windows-screenfetch
+<b>注意</b>：如果你在它上传到 PowerShell Gallery 之前使用过 windows-screenfetch，你需要先删除本地实例和相关环境变量，然后再运行以下安装命令。
 
-Simply run the <code>Screenfetch</code> command after installing the module and you should be good to go.
+安装模块后，只需运行 <code>Screenfetch</code> 命令，就可以使用了。
 
+<b>~~命令提示符~~</b>
 
+不再支持
 
+使用参数 <hr>
 
-<b>~~Command Prompt~~</b>
-
-No longer supported
-
-#### Usage Parameters <hr>
-- The `-distro` argument allows you to specify the ASCII logo shown
-- Possible alternatives currently is the apple logo, please see `AsciiArtGenerator` for possible extensions
+· -distro 参数允许你指定要显示的 ASCII 标志
+· 目前可用的替代选项是苹果标志，请参阅 AsciiArtGenerator 了解可能的扩展
 
 <br>
 <img src="screenshots/mac.png">
 
-#### Troubleshooting <hr>
-If you have followed the installation steps but you're getting the following error:
+故障排除 <hr>
+
+如果你按照安装步骤操作，但遇到以下错误：
 
 ```
-The file C:\<yourpath>\screenfetch.ps1 is not digitally signed. 
-The script will not execute on the system.
+文件 C:\<你的路径>\screenfetch.ps1 没有数字签名。
+系统将不会执行该脚本。
 ```
 
-A common fix is to run the powershell command `Set-ExecutionPolicy Unrestricted` in a shell with administrative privileges.
+一个常见的解决方法是在具有管理员权限的 shell 中运行 PowerShell 命令 Set-ExecutionPolicy Unrestricted。
 
+联系我 <hr>
 
-#### Contact Me <hr>
-Below are my two most active social portals
+以下是我最活跃的两个社交平台
 
-- `julianchow@outlook.com`
-- https://twitter.com/JulianChow94
+· julianchow@outlook.com
+· https://twitter.com/JulianChow94
