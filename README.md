@@ -58,4 +58,4 @@ Windows screenFetch 可通过 <a href="https://www.powershellgallery.com/package
 · julianchow@outlook.com
 · https://twitter.com/JulianChow94
 
-该仓库不提供发行版下载
+该仓库不提供发行版下载，可到原仓库下载发行版
